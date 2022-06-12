@@ -1,3 +1,4 @@
+import pyperclip
 import string
 import random
 length = int(input("Enter the length of the password(min 7): "))
@@ -21,5 +22,6 @@ if(length>=7):
     for h in l:
         password+=str(h)
     print("Your Password: ",password)
+    pyperclip.copy(password)
 else:
     print("Minimum length is 7...\nTry again later")
